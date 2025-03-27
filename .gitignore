@@ -1,7 +1,26 @@
-__pycache__/
+# Python bytecode
 *.pyc
+__pycache__/
+
+# Environment files
 .env
+.env.*
+
+# Logs
 *.log
+
+# OS specific files
 .DS_Store
+
+# IDE configurations
 .idea/
 .vscode/
+
+# Cache files
+.ruff_cache
+.pytest_cache
+
+htmlcov/
+.coverage
+
+storage/

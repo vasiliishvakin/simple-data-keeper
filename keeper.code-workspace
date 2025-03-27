@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"launch": {
+		"configurations": [
+			{
+				"name": "FastAPI (uvicorn)",
+				"type": "python",
+				"request": "launch",
+				"module": "uvicorn",
+				"args": [
+					"app.main:app",
+					"--reload"
+				],
+				"cwd": "${workspaceFolder}",
+				"envFile": "${workspaceFolder}/.env",
+				"env": {
+					"PYDEVD_DISABLE_FILE_VALIDATION": "1"
+				},
+				"console": "integratedTerminal"
+			}
+		]
+	},
+	"settings": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"makefile.configureOnOpen": false
+	}
+}
